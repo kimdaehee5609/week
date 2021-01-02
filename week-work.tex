@@ -1,0 +1,1319 @@
+%	-------------------------------------------------------------------------------
+%
+%			작성		
+%				2020년 
+%				10월 
+%				21일 
+%				수
+%
+%
+%
+%
+%
+%
+%	-------------------------------------------------------------------------------
+
+%	\documentclass[10pt,xcolor=pdftex,dvipsnames,table]{beamer}
+%	\documentclass[10pt,blue,xcolor=pdftex,dvipsnames,table,handout]{beamer}
+%	\documentclass[14pt,blue,xcolor=pdftex,dvipsnames,table,handout]{beamer}
+	\documentclass[aspectratio=1610,20pt,xcolor=pdftex,dvipsnames,table,handout]{beamer}
+%	\documentclass[aspectratio=169,17pt,xcolor=pdftex,dvipsnames,table,handout]{beamer}
+%	\documentclass[aspectratio=149,17pt,xcolor=pdftex,dvipsnames,table,handout]{beamer}
+%	\documentclass[aspectratio=54,17pt,xcolor=pdftex,dvipsnames,table,handout]{beamer}
+%	\documentclass[aspectratio=43,17pt,xcolor=pdftex,dvipsnames,table,handout]{beamer}
+%	\documentclass[aspectratio=32,17pt,xcolor=pdftex,dvipsnames,table,handout]{beamer}
+
+		% Font Size
+		%	default font size : 11 pt
+		%	8,9,10,11,12,14,17,20
+		%
+		% 	put frame titles 
+		% 		1) 	slideatop
+		%		2) 	slide centered
+		%
+		%	navigation bar
+		% 		1)	compress
+		%		2)	uncompressed
+		%
+		%	Color
+		%		1) blue
+		%		2) red
+		%		3) brown
+		%		4) black and white	
+		%
+		%	Output
+		%		1)  	[default]	
+		%		2)	[handout]		for PDF handouts
+		%		3) 	[trans]		for PDF transparency
+		%		4)	[notes=hide/show/only]
+
+		%	Text and Math Font
+		% 		1)	[sans]
+		% 		2)	[sefif]
+		%		3) 	[mathsans]
+		%		4)	[mathserif]
+
+
+		%	---------------------------------------------------------	
+		%	슬라이드 크기 설정 ( 128mm X 96mm )
+		%	---------------------------------------------------------	
+%			\setbeamersize{text margin left=2mm}
+%			\setbeamersize{text margin right=2mm}
+
+		%	---------------------------------------------------------	
+		%	슬라이드 크기 설정 ( 128mm X 96mm )
+		%	---------------------------------------------------------	
+
+%			% Format presentation size to A4
+%			\usepackage[size=a4]{beamerposter}		% A4용지 크기 사용
+			\geometry{paper=a5paper}
+%			% Format presentation size to A4 길게
+%			\geometry{paper=a4paper, landscape}
+
+			\setbeamersize{text margin left=10mm}
+			\setbeamersize{text margin right=10mm}
+
+
+	%	========================================================== 	Package
+		\usepackage{kotex}						% 한글 사용
+		\usepackage{amssymb,amsfonts,amsmath}	% 수학 수식 사용
+		\usepackage{color}					%
+		\usepackage{colortbl}					%
+
+
+	%		========================================================= 	note 옵션인 
+	%			\setbeameroption{show only notes}
+		
+
+	%		========================================================= 	Theme
+
+		%	---------------------------------------------------------	
+		%	전체 테마
+		%	---------------------------------------------------------	
+		%	테마 명명의 관례 : 도시 이름
+%			\usetheme{default}			%
+%			\usetheme{Madrid}    		%
+%			\usetheme{CambridgeUS}    	% -red, no navigation bar
+%			\usetheme{Antibes}			% -blueish, tree-like navigation bar
+
+		%	----------------- table of contents in sidebar
+			\usetheme{Berkeley}		% -blueish, table of contents in sidebar
+									% 개인적으로 마음에 듬
+
+%			\usetheme{Marburg}			% - sidebar on the right
+%			\usetheme{Hannover}		% 왼쪽에 마크
+%			\usetheme{Berlin}			% - navigation bar in the headline
+%			\usetheme{Szeged}			% - navigation bar in the headline, horizontal lines
+%			\usetheme{Malmoe}			% - section/subsection in the headline
+
+%			\usetheme{Singapore}
+%			\usetheme{Amsterdam}
+
+		%	---------------------------------------------------------	
+		%	색 테마
+		%	---------------------------------------------------------	
+%			\usecolortheme{albatross}	% 바탕 파란
+%			\usecolortheme{crane}		% 바탕 흰색
+%			\usecolortheme{beetle}		% 바탕 회색
+%			\usecolortheme{dove}		% 전체적으로 흰색
+%			\usecolortheme{fly}		% 전체적으로 회색
+%			\usecolortheme{seagull}	% 휜색
+%			\usecolortheme{wolverine}	& 제목이 노란색
+%			\usecolortheme{beaver}
+
+		%	---------------------------------------------------------	
+		%	Inner Color Theme 			내부 색 테마 ( 블록의 색 )
+		%	---------------------------------------------------------	
+
+%			\usecolortheme{rose}		% 흰색
+%			\usecolortheme{lily}		% 색 안 칠한다
+%			\usecolortheme{orchid} 	% 진하게
+
+		%	---------------------------------------------------------	
+		%	Outter Color Theme 		외부 색 테마 ( 머리말, 고리말, 사이드바 )
+		%	---------------------------------------------------------	
+
+%			\usecolortheme{whale}		% 진하다
+%			\usecolortheme{dolphin}	% 중간
+%			\usecolortheme{seahorse}	% 연하다
+
+		%	---------------------------------------------------------	
+		%	Font Theme 				폰트 테마
+		%	---------------------------------------------------------	
+%			\usfonttheme{default}		
+			\usefonttheme{serif}			
+%			\usefonttheme{structurebold}			
+%			\usefonttheme{structureitalicserif}			
+%			\usefonttheme{structuresmallcapsserif}			
+
+
+
+		%	---------------------------------------------------------	
+		%	Inner Theme 				
+		%	---------------------------------------------------------	
+
+%			\useinnertheme{default}
+			\useinnertheme{circles}		% 원문자			
+%			\useinnertheme{rectangles}		% 사각문자			
+%			\useinnertheme{rounded}		% 깨어짐
+%			\useinnertheme{inmargin}			
+
+
+
+
+		%	---------------------------------------------------------	
+		%	이동 단추 삭제
+		%	---------------------------------------------------------	
+%			\setbeamertemplate{navigation symbols}{}
+
+		%	---------------------------------------------------------	
+		%	문서 정보 표시 꼬리말 적용
+		%	---------------------------------------------------------	
+%			\useoutertheme{infolines}
+
+
+			
+	%	---------------------------------------------------------- 	배경이미지 지정
+%			\pgfdeclareimage[width=\paperwidth,height=\paperheight]{bgimage}{./fig/Chrysanthemum.jpg}
+%			\setbeamertemplate{background canvas}{\pgfuseimage{bgimage}}
+
+		%	---------------------------------------------------------	
+		% 	본문 글꼴색 지정
+		%	---------------------------------------------------------	
+%			\setbeamercolor{normal text}{fg=purple}
+%			\setbeamercolor{normal text}{fg=red!80}	% 숫자는 투명도 표시
+
+
+		%	---------------------------------------------------------	
+		%	itemize 모양 설정
+		%	---------------------------------------------------------	
+%			\setbeamertemplate{items}[ball]
+%			\setbeamertemplate{items}[circle]
+%			\setbeamertemplate{items}[rectangle]
+
+
+
+
+
+
+		\setbeamercovered{dynamic}
+
+
+
+
+
+		% --------------------------------- 	문서 기본 사항 설정
+		\setcounter{secnumdepth}{3} 		% 문단 번호 깊이
+		\setcounter{tocdepth}{3} 			% 문단 번호 깊이
+
+
+
+
+% ------------------------------------------------------------------------------
+% Begin document (Content goes below)
+% ------------------------------------------------------------------------------
+	\begin{document}
+	
+
+			\title{ 주간 업무 일지 }
+			\author{ 김대희 }
+			\date{ 2020년 
+						12월 				% 수정
+						29일\\ 			% 수정
+						1째주 			% 수정
+						NO.21  }			% 수정
+
+
+% -----------------------------------------------------------------------------
+%		개정 내용
+% -----------------------------------------------------------------------------
+%
+%		2020년 10월 5일 첫제작
+%		2020.12.29일 						% 수정
+%		21판 제작							% 수정
+%			
+%
+
+
+	%	==========================================================
+	%
+	%	----------------------------------------------------------
+		\begin{frame}[plain]
+		\titlepage
+		\end{frame}
+
+
+		\begin{frame} [plain]{목차}
+		\tableofcontents%
+
+
+			\setlength{\leftmargini}{ 2em}			
+			\begin{itemize}
+
+				\item [part1] \ref{part1}	정리
+%\label{part1} 	%  정리
+				\item [part2] \ref{part2}	일정
+%\label{part2} 	%  일정
+				\item [part3] \ref{part3}	업무
+%\label{part3} 	%  업무
+%				\item [part4] \ref{part4}	좋은 문구
+%				\item [part5] \ref{part5}	출입문			
+%				\item [part6] \ref{part6}	일반사이트		
+%				\item [part7] \ref{part7}	쇼핑 사이트		
+
+			\end{itemize}
+
+
+		\end{frame}
+
+
+
+	%	========================================================== 정리
+		\part{정리 }
+		\frame{\partpage}
+
+\label{part1} 	%  정리
+
+		\begin{frame} [plain]{목차}
+		\tableofcontents%
+		\end{frame}
+		
+
+	%	---------------------------------------------------------- 울산지사
+	%		Frame
+	%	----------------------------------------------------------
+		\section{울산지사}
+		\begin{frame} [t,plain]
+		\frametitle{울산지사}
+			\begin{block} {울산지사}
+			\setlength{\leftmargini}{2em}			
+			\begin{itemize}
+				\item 44971
+				\item 울산광역시 울주군 온양읍 광청로 796-66
+				\item 온양읍 운화리 384-1번지
+				\item 한국도로공사 울산지사 도로안전팀
+				\item 052) 701 - 6200 ASRS
+				\item 052) 701 - 6271 상황실
+				\item 052) 701 - 6298 도로안전팀 FAX
+				\item 				\hrulefill
+
+			\end{itemize}
+			\end{block}						
+
+		\end{frame}						
+		
+
+	%	---------------------------------------------------------- 청출
+	%		Frame
+	%	----------------------------------------------------------
+		\section{청출}
+		\begin{frame} [t,plain]
+		\frametitle{청출}
+			\begin{block} {청출}
+			\setlength{\leftmargini}{1em}			
+			\begin{itemize}
+				\item 	47 506
+				\item 	부산광역시 연제구 교대로 13 지하 청출어람
+						\\ \hrulefill
+
+				\item 	박일 \quad \hrulefill
+				\item 	오동재		\quad \hrulefill
+				\item 	심경환		\quad \hrulefill
+				\item 	강민재		\quad \hrulefill
+				\item 	김민자		\quad \hrulefill
+				\item 	홍성화		\quad \hrulefill
+
+			\end{itemize}
+			\end{block}			
+
+								
+		\end{frame}						
+	
+	%	---------------------------------------------------------- 보현
+	%		Frame
+	%	----------------------------------------------------------
+		\section{보현}
+		\begin{frame} [t,plain]
+		\frametitle{보현}
+
+			\begin{block} {동래 효심사}
+			\setlength{\leftmargini}{1em}			
+			\begin{itemize}
+				\item 	\hrulefill
+				\item 	\hrulefill
+				\item 	\hrulefill
+				\item 	\hrulefill
+				\item 	\hrulefill
+				\item 	\hrulefill
+				\item 	\hrulefill
+			\end{itemize}
+			\end{block}			
+								
+			\begin{block} {해운대 반야선원}
+			\setlength{\leftmargini}{1em}			
+			\begin{itemize}
+				\item 	\hrulefill
+				\item 	\hrulefill
+				\item 	\hrulefill
+				\item 	\hrulefill
+				\item 	\hrulefill
+				\item 	\hrulefill
+				\item 	\hrulefill
+			\end{itemize}
+			\end{block}			
+
+		\end{frame}						
+
+
+	%	---------------------------------------------------------- 초량 집
+	%		Frame
+	%	----------------------------------------------------------
+		\section{초량 집}
+		\begin{frame} [t,plain]
+		\frametitle{초량 집}
+			\begin{block} {초량 집}
+			\setlength{\leftmargini}{1em}			
+			\begin{itemize}
+				\item 	\hrulefill	김 대희
+				\item 	\hrulefill	안 신영
+				\item 	\hrulefill	김 재민
+				\item 	\hrulefill	김 재경
+				\item 	\hrulefill	김 재홍
+				\item 	\hrulefill	조 경연
+				\item 	\hrulefill	전 삼연
+			\end{itemize}
+			\end{block}			
+								
+		\end{frame}						
+			
+
+	%	========================================================== 일정
+		\part{일정}
+		\frame{\partpage}
+		
+\label{part2} 	%  일정
+
+		\begin{frame} [plain]{목차}
+		\tableofcontents%
+		\end{frame}
+
+
+	%	---------------------------------------------------------- 주간  ---------------------------------------------------------- 주간 ---------------------------------------------------------- 주간
+	%		Frame
+	%	----------------------------------------------------------
+		\section{	주간 
+					53 째주 }	%---------------------------------------- 수정
+
+		\begin{frame} [t,plain]
+		\frametitle{}
+			\begin{block} {주간 53/53째주 } %------------------------------ 수정
+			\setlength{\leftmargini}{1em}			
+			\begin{itemize}
+				\item 월	\hrulefill
+				\item \hrulefill
+				\item \hrulefill
+				\item 화 \hrulefill
+				\item \hrulefill
+				\item \hrulefill
+				\item 수 \hrulefill
+				\item \hrulefill
+				\item \hrulefill
+				\item 목 \hrulefill
+				\item \hrulefill
+				\item \hrulefill
+				\item 금 \hrulefill
+				\item \hrulefill
+				\item \hrulefill
+				\item 토 \hrulefill
+				\item \hrulefill
+				\item \hrulefill
+				\item 일 \hrulefill
+				\item \hrulefill
+				\item \hrulefill
+			\end{itemize}
+			\end{block}			
+								
+		\end{frame}						
+		
+	% ---------------------------------------------------------- 							월	12	/	28	}
+	% Frame											
+	% ----------------------------------------------------------											
+	\section{월 12/28}											
+	\begin{frame} [t,plain]											
+	\frametitle{}											
+		\begin{block} {월 12/28}										
+		\setlength{\leftmargini}{3em}										
+		\begin{itemize}										
+			\item [06-07] \hrulefill									
+			\item [07-08] \hrulefill									
+			\item [08-09] \hrulefill									
+			\item [09-10] \hrulefill									
+			\item [10-11] \hrulefill									
+			\item [11-12] \hrulefill									
+			\item [12-01] \hrulefill									
+			\item [01-02] \hrulefill									
+			\item [02-03] \hrulefill									
+			\item [03-04] \hrulefill									
+			\item [04-05] \hrulefill	소스 트리 작업
+			\item [05-06] \hrulefill									
+			\item [06-07] \hrulefill									
+			\item [07-08] \hrulefill			
+			\item [08-09] \hrulefill									
+			\item [09-10] \hrulefill									
+			\item [10-11] \hrulefill									
+			\item [11-12] \hrulefill									
+		\end{itemize}										
+		\end{block}										
+	\end{frame}											
+												
+	% ---------------------------------------------------------- 							화	12	/	29	}
+	% Frame											
+	% ----------------------------------------------------------											
+	\section{화 12/29}											
+	\begin{frame} [t,plain]											
+	\frametitle{}											
+		\begin{block} {화 12/29}										
+		\setlength{\leftmargini}{3em}										
+		\begin{itemize}										
+			\item [06-07] \hrulefill									
+			\item [07-08] \hrulefill									
+			\item [08-09] \hrulefill	출근
+			\item [09-10] \hrulefill	주간 업무 일지 수정 및 출력								
+			\item [10-11] \hrulefill									
+			\item [11-12] \hrulefill									
+			\item [12-01] \hrulefill									
+			\item [01-02] \hrulefill									
+			\item [02-03] \hrulefill									
+			\item [03-04] \hrulefill	전세권 설정 등기	 해제							
+			\item [04-05] \hrulefill									
+			\item [05-06] \hrulefill									
+			\item [06-07] \hrulefill									
+			\item [07-08] \hrulefill									
+			\item [08-09] \hrulefill									
+			\item [09-10] \hrulefill									
+			\item [10-11] \hrulefill									
+			\item [11-12] \hrulefill									
+		\end{itemize}										
+		\end{block}										
+	\end{frame}											
+												
+	% ---------------------------------------------------------- 							수	12월30 }
+	% Frame											
+	% ----------------------------------------------------------											
+	\section{수 12/30}											
+	\begin{frame} [t,plain]											
+	\frametitle{}											
+		\begin{block} {수 12/30}										
+		\setlength{\leftmargini}{3em}										
+		\begin{itemize}										
+			\item [06-07] \hrulefill									
+			\item [07-08] \hrulefill	카니발 출근 (이사짐 챙김)
+			\item [08-09] \hrulefill									
+			\item [09-10] \hrulefill	깃 저장소 정리								
+			\item [10-11] \hrulefill	현황 파일 정리 : 깃 리포지토리 추가
+			\item [11-12] \hrulefill	준공금 청구서 강희주씨 확인 
+								세금계산서 발행 요청 미소 주아영 과장
+			\item [12-01] \hrulefill	점심 19번 								
+			\item [01-02] \hrulefill	깃 정리								
+			\item [02-03] \hrulefill									
+			\item [03-04] \hrulefill									
+			\item [04-05] \hrulefill									
+			\item [05-06] \hrulefill									
+			\item [06-07] \hrulefill									
+			\item [07-08] \hrulefill									
+			\item [08-09] \hrulefill									
+			\item [09-10] \hrulefill									
+			\item [10-11] \hrulefill									
+			\item [11-12] \hrulefill									
+		\end{itemize}										
+		\end{block}										
+	\end{frame}											
+												
+	% ---------------------------------------------------------- 							목	12월31	}
+	% Frame											
+	% ----------------------------------------------------------											
+	\section{목 12/31}											
+	\begin{frame} [t,plain]											
+	\frametitle{}											
+		\begin{block} {목 12/31}										
+		\setlength{\leftmargini}{3em}										
+		\begin{itemize}										
+			\item [06-07] \hrulefill									
+			\item [07-08] \hrulefill									
+			\item [08-09] \hrulefill									
+			\item [09-10] \hrulefill									
+			\item [10-11] \hrulefill									
+			\item [11-12] \hrulefill									
+			\item [12-01] \hrulefill									
+			\item [01-02] \hrulefill									
+			\item [02-03] \hrulefill									
+			\item [03-04] \hrulefill									
+			\item [04-05] \hrulefill									
+			\item [05-06] \hrulefill									
+			\item [06-07] \hrulefill									
+			\item [07-08] \hrulefill									
+			\item [08-09] \hrulefill									
+			\item [09-10] \hrulefill									
+			\item [10-11] \hrulefill									
+			\item [11-12] \hrulefill									
+		\end{itemize}										
+		\end{block}										
+	\end{frame}											
+												
+	% ---------------------------------------------------------- 							금	1	/	1	}
+	% Frame											
+	% ----------------------------------------------------------											
+	\section{금 1/1}											
+	\begin{frame} [t,plain]											
+	\frametitle{}											
+		\begin{block} {금 1/1}										
+		\setlength{\leftmargini}{3em}										
+		\begin{itemize}										
+			\item [06-07] \hrulefill									
+			\item [07-08] \hrulefill									
+			\item [08-09] \hrulefill									
+			\item [09-10] \hrulefill									
+			\item [10-11] \hrulefill									
+			\item [11-12] \hrulefill									
+			\item [12-01] \hrulefill									
+			\item [01-02] \hrulefill									
+			\item [02-03] \hrulefill									
+			\item [03-04] \hrulefill									
+			\item [04-05] \hrulefill									
+			\item [05-06] \hrulefill									
+			\item [06-07] \hrulefill									
+			\item [07-08] \hrulefill									
+			\item [08-09] \hrulefill									
+			\item [09-10] \hrulefill									
+			\item [10-11] \hrulefill									
+			\item [11-12] \hrulefill									
+		\end{itemize}										
+		\end{block}										
+	\end{frame}											
+												
+	% ---------------------------------------------------------- 							토	1	/	2	}
+	% Frame											
+	% ----------------------------------------------------------											
+	\section{토 1/2}											
+	\begin{frame} [t,plain]											
+	\frametitle{}											
+		\begin{block} {토 1/2}										
+		\setlength{\leftmargini}{3em}										
+		\begin{itemize}										
+			\item [06-07] \hrulefill									
+			\item [07-08] \hrulefill									
+			\item [08-09] \hrulefill									
+			\item [09-10] \hrulefill									
+			\item [10-11] \hrulefill									
+			\item [11-12] \hrulefill									
+			\item [12-01] \hrulefill									
+			\item [01-02] \hrulefill									
+			\item [02-03] \hrulefill									
+			\item [03-04] \hrulefill									
+			\item [04-05] \hrulefill									
+			\item [05-06] \hrulefill			반야선원 목탁수업						
+			\item [06-07] \hrulefill									
+			\item [07-08] \hrulefill									
+			\item [08-09] \hrulefill									
+			\item [09-10] \hrulefill									
+			\item [10-11] \hrulefill									
+			\item [11-12] \hrulefill									
+		\end{itemize}										
+		\end{block}										
+	\end{frame}											
+												
+	% ---------------------------------------------------------- 							일	1	/	3	}
+	% Frame											
+	% ----------------------------------------------------------											
+	\section{일 1/3}											
+	\begin{frame} [t,plain]											
+	\frametitle{}											
+		\begin{block} {일 1/3}										
+		\setlength{\leftmargini}{3em}										
+		\begin{itemize}										
+			\item [06-07] \hrulefill									
+			\item [07-08] \hrulefill									
+			\item [08-09] \hrulefill									
+			\item [09-10] \hrulefill									
+			\item [10-11] \hrulefill			범어사 선문화관 일요법회						
+			\item [11-12] \hrulefill									
+			\item [12-01] \hrulefill									
+			\item [01-02] \hrulefill									
+			\item [02-03] \hrulefill									
+			\item [03-04] \hrulefill									
+			\item [04-05] \hrulefill									
+			\item [05-06] \hrulefill									
+			\item [06-07] \hrulefill									
+			\item [07-08] \hrulefill									
+			\item [08-09] \hrulefill									
+			\item [09-10] \hrulefill									
+			\item [10-11] \hrulefill									
+			\item [11-12] \hrulefill									
+		\end{itemize}										
+		\end{block}										
+	\end{frame}											
+
+
+
+
+	%	---------------------------------------------------------- 주간  ---------------------------------------------------------- 주간 ---------------------------------------------------------- 주간
+	%		Frame
+	%	----------------------------------------------------------
+		\section{	주간 
+					01 / 52 째주 }	%---------------------------------------- 수정
+
+		\begin{frame} [t,plain]
+		\frametitle{}
+			\begin{block} {주간 01/52째주 } %------------------------------ 수정
+			\setlength{\leftmargini}{1em}			
+			\begin{itemize}
+				\item 월	\hrulefill
+				\item \hrulefill
+				\item \hrulefill
+				\item 화 \hrulefill
+				\item \hrulefill
+				\item \hrulefill
+				\item 수 \hrulefill
+				\item \hrulefill
+				\item \hrulefill
+				\item 목 \hrulefill
+				\item \hrulefill
+				\item \hrulefill
+				\item 금 \hrulefill
+				\item \hrulefill
+				\item \hrulefill
+				\item 토 \hrulefill
+				\item \hrulefill
+				\item \hrulefill
+				\item 일 \hrulefill
+				\item \hrulefill
+			\end{itemize}
+			\end{block}			
+								
+		\end{frame}						
+		
+	% ---------------------------------------------------------- 							월	1	/	4	}
+	% Frame											
+	% ----------------------------------------------------------											
+	\section{월 1/4}											
+	\begin{frame} [t,plain]											
+	\frametitle{}											
+		\begin{block} {월 1/4}										
+		\setlength{\leftmargini}{3em}										
+		\begin{itemize}										
+			\item [06-07] \hrulefill									
+			\item [07-08] \hrulefill									
+			\item [08-09] \hrulefill									
+			\item [09-10] \hrulefill									
+			\item [10-11] \hrulefill									
+			\item [11-12] \hrulefill									
+			\item [12-01] \hrulefill									
+			\item [01-02] \hrulefill									
+			\item [02-03] \hrulefill									
+			\item [03-04] \hrulefill									
+			\item [04-05] \hrulefill	
+			\item [05-06] \hrulefill									
+			\item [06-07] \hrulefill									
+			\item [07-08] \hrulefill			
+			\item [08-09] \hrulefill									
+			\item [09-10] \hrulefill									
+			\item [10-11] \hrulefill									
+			\item [11-12] \hrulefill									
+		\end{itemize}										
+		\end{block}										
+	\end{frame}											
+												
+	% ---------------------------------------------------------- 							화	1	/	5	}
+	% Frame											
+	% ----------------------------------------------------------											
+	\section{화 1/5}											
+	\begin{frame} [t,plain]											
+	\frametitle{}											
+		\begin{block} {화 1/5}										
+		\setlength{\leftmargini}{3em}										
+		\begin{itemize}										
+			\item [06-07] \hrulefill									
+			\item [07-08] \hrulefill									
+			\item [08-09] \hrulefill									
+			\item [09-10] \hrulefill									
+			\item [10-11] \hrulefill									
+			\item [11-12] \hrulefill									
+			\item [12-01] \hrulefill									
+			\item [01-02] \hrulefill									
+			\item [02-03] \hrulefill									
+			\item [03-04] \hrulefill	
+			\item [04-05] \hrulefill									
+			\item [05-06] \hrulefill									
+			\item [06-07] \hrulefill									
+			\item [07-08] \hrulefill									
+			\item [08-09] \hrulefill									
+			\item [09-10] \hrulefill									
+			\item [10-11] \hrulefill									
+			\item [11-12] \hrulefill									
+		\end{itemize}										
+		\end{block}										
+	\end{frame}											
+												
+	% ---------------------------------------------------------- 							수	1	/	6	}
+	% Frame											
+	% ----------------------------------------------------------											
+	\section{수 1/6}											
+	\begin{frame} [t,plain]											
+	\frametitle{}											
+		\begin{block} {수 1/6}
+		\setlength{\leftmargini}{3em}										
+		\begin{itemize}										
+			\item [06-07] \hrulefill									
+			\item [07-08] \hrulefill									
+			\item [08-09] \hrulefill									
+			\item [09-10] \hrulefill									
+			\item [10-11] \hrulefill									
+			\item [11-12] \hrulefill									
+			\item [12-01] \hrulefill									
+			\item [01-02] \hrulefill									
+			\item [02-03] \hrulefill									
+			\item [03-04] \hrulefill									
+			\item [04-05] \hrulefill									
+			\item [05-06] \hrulefill									
+			\item [06-07] \hrulefill									
+			\item [07-08] \hrulefill									
+			\item [08-09] \hrulefill									
+			\item [09-10] \hrulefill									
+			\item [10-11] \hrulefill									
+			\item [11-12] \hrulefill									
+		\end{itemize}										
+		\end{block}										
+	\end{frame}											
+												
+	% ---------------------------------------------------------- 							목	1	/	7	}
+	% Frame											
+	% ----------------------------------------------------------											
+	\section{목 1/7}											
+	\begin{frame} [t,plain]											
+	\frametitle{}											
+		\begin{block} {목 1/7}										
+		\setlength{\leftmargini}{3em}										
+		\begin{itemize}										
+			\item [06-07] \hrulefill									
+			\item [07-08] \hrulefill									
+			\item [08-09] \hrulefill									
+			\item [09-10] \hrulefill									
+			\item [10-11] \hrulefill									
+			\item [11-12] \hrulefill									
+			\item [12-01] \hrulefill									
+			\item [01-02] \hrulefill									
+			\item [02-03] \hrulefill									
+			\item [03-04] \hrulefill									
+			\item [04-05] \hrulefill									
+			\item [05-06] \hrulefill									
+			\item [06-07] \hrulefill									
+			\item [07-08] \hrulefill									
+			\item [08-09] \hrulefill									
+			\item [09-10] \hrulefill									
+			\item [10-11] \hrulefill									
+			\item [11-12] \hrulefill									
+		\end{itemize}										
+		\end{block}										
+	\end{frame}											
+												
+	% ---------------------------------------------------------- 							금	1	/	8	}
+	% Frame											
+	% ----------------------------------------------------------											
+	\section{금 1/8}
+	\begin{frame} [t,plain]											
+	\frametitle{}											
+		\begin{block} {금 1/8}
+		\setlength{\leftmargini}{3em}										
+		\begin{itemize}										
+			\item [06-07] \hrulefill									
+			\item [07-08] \hrulefill									
+			\item [08-09] \hrulefill									
+			\item [09-10] \hrulefill									
+			\item [10-11] \hrulefill									
+			\item [11-12] \hrulefill									
+			\item [12-01] \hrulefill									
+			\item [01-02] \hrulefill									
+			\item [02-03] \hrulefill									
+			\item [03-04] \hrulefill									
+			\item [04-05] \hrulefill									
+			\item [05-06] \hrulefill									
+			\item [06-07] \hrulefill									
+			\item [07-08] \hrulefill									
+			\item [08-09] \hrulefill									
+			\item [09-10] \hrulefill									
+			\item [10-11] \hrulefill									
+			\item [11-12] \hrulefill									
+		\end{itemize}										
+		\end{block}										
+	\end{frame}											
+												
+	% ---------------------------------------------------------- 							토	1	/	9	}
+	% Frame											
+	% ----------------------------------------------------------											
+	\section{토 1/9}											
+	\begin{frame} [t,plain]											
+	\frametitle{}											
+		\begin{block} {토 1/9}										
+		\setlength{\leftmargini}{3em}										
+		\begin{itemize}										
+			\item [06-07] \hrulefill									
+			\item [07-08] \hrulefill									
+			\item [08-09] \hrulefill									
+			\item [09-10] \hrulefill									
+			\item [10-11] \hrulefill									
+			\item [11-12] \hrulefill									
+			\item [12-01] \hrulefill									
+			\item [01-02] \hrulefill									
+			\item [02-03] \hrulefill									
+			\item [03-04] \hrulefill									
+			\item [04-05] \hrulefill									
+			\item [05-06] \hrulefill			반야선원 목탁수업						
+			\item [06-07] \hrulefill									
+			\item [07-08] \hrulefill									
+			\item [08-09] \hrulefill									
+			\item [09-10] \hrulefill									
+			\item [10-11] \hrulefill									
+			\item [11-12] \hrulefill									
+		\end{itemize}										
+		\end{block}										
+	\end{frame}											
+												
+	% ---------------------------------------------------------- 							일	1	/	10	}
+	% Frame											
+	% ----------------------------------------------------------											
+	\section{일 1/10}											
+	\begin{frame} [t,plain]											
+	\frametitle{}											
+		\begin{block} {일 1/10}										
+		\setlength{\leftmargini}{3em}										
+		\begin{itemize}										
+			\item [06-07] \hrulefill									
+			\item [07-08] \hrulefill									
+			\item [08-09] \hrulefill									
+			\item [09-10] \hrulefill									
+			\item [10-11] \hrulefill			범어사 선문화관 일요법회						
+			\item [11-12] \hrulefill									
+			\item [12-01] \hrulefill									
+			\item [01-02] \hrulefill									
+			\item [02-03] \hrulefill									
+			\item [03-04] \hrulefill									
+			\item [04-05] \hrulefill									
+			\item [05-06] \hrulefill									
+			\item [06-07] \hrulefill									
+			\item [07-08] \hrulefill									
+			\item [08-09] \hrulefill									
+			\item [09-10] \hrulefill									
+			\item [10-11] \hrulefill									
+			\item [11-12] \hrulefill									
+		\end{itemize}										
+		\end{block}										
+	\end{frame}											
+
+
+
+
+	%	========================================================== 업무
+		\part{업무}
+		\frame{\partpage}
+
+\label{part3} 	%  업무
+
+		\begin{frame} [plain]{업무 목차}
+		\tableofcontents%
+		\end{frame}
+
+	% ----------------------------------------------------------------------------- 울산지사
+	%
+ 	% -----------------------------------------------------------------------------
+		\section{울산지사}
+
+		\begin{frame} [t,plain]
+%		\frametitle{울산지사}
+			\begin{block} {울산지사}
+			\setlength{\leftmargini}{1em}			
+			\begin{itemize}
+				\item 
+				\item 
+				\item 
+				\item 
+				\item 
+				\item 
+			\end{itemize}
+			\end{block}						
+		\end{frame}					
+
+		\begin{frame} [t,plain]
+%		\frametitle{부산울산선}
+			\begin{block} {부산울산선}
+			\setlength{\leftmargini}{1em}			
+			\begin{itemize}
+				\item 
+				\item 
+				\item 
+				\item 
+				\item 
+				\item 
+			\end{itemize}
+			\end{block}						
+		\end{frame}					
+
+
+		\begin{frame} [t,plain]
+%		\frametitle{부산외곽선}
+			\begin{block} {부산외곽선}
+			\setlength{\leftmargini}{1em}			
+			\begin{itemize}
+				\item 
+				\item 
+				\item 
+				\item 
+				\item 
+				\item 
+			\end{itemize}
+			\end{block}						
+		\end{frame}					
+
+
+	% ----------------------------------------------------------------------------- 금정동문회
+	%
+	% -----------------------------------------------------------------------------
+		\section{금정동문회}
+		\begin{frame} [t,plain]
+
+%		\frametitle{금정동문회}
+
+			\begin{block} {금정동문회 051)582-7013}
+			\setlength{\leftmargini}{1em}			
+			\begin{itemize}
+				\item 동문회 사무실 051)582-7013
+				\item 신기열 회장	\hrulefill
+				\item 정봉호 사무총장 	\hrulefill
+				\item 이채미 사무장 	\hrulefill
+
+			\end{itemize}
+			\end{block}						
+		\end{frame}					
+
+
+	% ----------------------------------------------------------------------------- 능인회
+	%
+	% -----------------------------------------------------------------------------
+		\section{능인회}
+		\begin{frame} [t,plain]
+
+%		\frametitle{능인회}
+
+			\begin{block} {능인회 (반야선원) 051)701-5655 }
+			\setlength{\leftmargini}{1em}			
+			\begin{itemize}
+				\item 허공 법사 스님 	\hrulefill 010-3732-3383
+				\item 양도근 회장	\hrulefill
+				\item 하승희 총무	\hrulefill
+				\item 조현진 	\hrulefill
+				\item 여종한	\hrulefill
+				\item 전대성 감사	\hrulefill
+				\item 최윤교 	\hrulefill
+				\item 정일현	\hrulefill
+				\item 김홍윤	\hrulefill
+			\end{itemize}
+			\end{block}						
+
+			\begin{block} {능인회 주간업무 }					% 수정
+			\setlength{\leftmargini}{1em}			
+			\begin{itemize}
+%				\item 월 14 \hrulefill 정일현 (41)
+%				\item 화 15 \hrulefill 여종한 (42)
+%				\item 수 16 \hrulefill 조승희 (43)
+%				\item 목 17 \hrulefill 조현진 (44)
+%				\item 금 18 \hrulefill 양도근 (45)
+
+%				\item 월 21 \hrulefill 정일현 (46)
+%				\item 화 22 \hrulefill 여종한 (47)
+%				\item 수 23 \hrulefill 조승희 (48)
+%				\item 목 24 \hrulefill 조현진 (49)
+%				\item 금 25 \hrulefill X
+
+
+				\item 월 28 \hrulefill 정일현 (51)
+				\item 화 29 \hrulefill 여종한 (52)
+				\item 수 30 \hrulefill 조승희 (53)
+				\item 목 31 \hrulefill 조현진 (54)
+				\item 금 1  \hrulefill X
+
+				\item 
+			\end{itemize}
+			\end{block}						
+
+		\end{frame}					
+
+
+	% ----------------------------------------------------------------------------- 반야선원
+	%
+	% -----------------------------------------------------------------------------
+		\section{반야선원}
+
+		\begin{frame} [t,plain]
+%		\frametitle{반야선원}
+
+			\begin{block} {반야선원 051)701-5655 }
+			\setlength{\leftmargini}{1em}			
+			\begin{itemize}
+				\item 허공 법사 스님 	\hrulefill 010-3732-3383
+				\item 효담 스님		\hrulefill 010 4215 9119
+				\item 
+			\end{itemize}
+			\end{block}						
+		\end{frame}					
+
+		\begin{frame} [t,plain]
+%		\frametitle{반야선원}
+
+			\begin{block} {법회 및 교육}				% --------------------------- 수정
+			\setlength{\leftmargini}{1em}			
+			\begin{itemize}
+				\item 월 28 \hrulefill 
+				\item 화 29 \hrulefill 
+				\item 수 30 \hrulefill 
+				\item 목 31 \hrulefill 
+				\item 금 1 \hrulefill 
+				\item 토 2 \hrulefill 
+				\item 일 3 \hrulefill 
+				\item 
+			\end{itemize}
+			\end{block}						
+
+		\end{frame}					
+
+
+	% ----------------------------------------------------------------------------- 포교사
+	%
+	% -----------------------------------------------------------------------------
+		\section{포교사}
+		\begin{frame} [t,plain]
+%		\frametitle{포교사}
+
+			\begin{block} {포교사 051)633-3011,3015}
+			\setlength{\leftmargini}{1em}			
+			\begin{itemize}
+				\item 자재천 정분남 단장 	\hrulefill
+				\item 손삼호 사무국장 \\ 010-3587-3530 \\ jeamho son353535
+			\end{itemize}
+			\end{block}						
+		\end{frame}					
+
+	% ----------------------------------------------------------------------------- 포교사 청파팀
+	%
+	% -----------------------------------------------------------------------------
+		\begin{frame} [t,plain]
+%		\frametitle{포교사 청파팀}
+
+			\begin{block} {포교사 청파팀 }
+			\setlength{\leftmargini}{1em}			
+			\begin{itemize}
+				\item 팀장 본각 김영신 	\hrulefill
+				\item 총무 보운 천유실 	\hrulefill
+				\item 신문 월인 김필근 	\hrulefill
+			\end{itemize}
+			\end{block}						
+
+
+			\begin{block} {동안거 법화경 독송 }
+			\setlength{\leftmargini}{1em}			
+			\begin{itemize}
+				\item 	\hrulefill 2020년 12월 27일 일요일 \\
+						제24 묘음보살품 \\
+						제28 보현보살권발품 
+
+				\item 	\hrulefill 2021년 2월 2일 화요일 \\
+						제3 비유품 \\
+						제4 신해품 
+			\end{itemize}
+			\end{block}						
+
+
+		\end{frame}					
+
+
+%	%	========================================================== skip
+%		\begin{frame} [t,plain]
+%		\end{frame}재
+
+
+%	% ----------------------------------------------------------------------------- 수채화
+%	%
+%	% -----------------------------------------------------------------------------
+%		\section{수채화}
+%		\begin{frame} [t,plain]
+%		\frametitle{수채화}
+%			\begin{block} {수채화}
+%			\setlength{\leftmargini}{1em}			
+%			\begin{itemize}
+%				\item 	\hrulefill
+%				\item 	\hrulefill
+%				\item 	\hrulefill
+%			\end{itemize}
+%			\end{block}						
+%		\end{frame}					
+
+	% ----------------------------------------------------------------------------- 도서관 
+	%
+	% -----------------------------------------------------------------------------
+		\section{도서관}
+		\begin{frame} [t,plain]
+		\frametitle{}
+			\begin{block} {도서관}
+			\setlength{\leftmargini}{1em}			
+			\begin{itemize}
+				\item 책바다 - 국립중앙도서관
+				\item 부산시립중앙도서관
+				\item 밀리의서재 
+			\end{itemize}
+			\end{block}						
+		\end{frame}					
+
+	% ----------------------------------------------------------------------------- 도서관  대출 및 반납
+	%
+	% -----------------------------------------------------------------------------
+		\section{도서관 대출 및 반납}
+		\begin{frame} [t,plain]
+		\frametitle{}
+
+			\begin{block} {도서관 대출 }
+			\setlength{\leftmargini}{1em}			
+			\begin{itemize}
+				\item 
+				\item 
+				\item 
+				\item 
+				\item 
+				\item 
+				\item 
+				\item 
+			\end{itemize}
+			\end{block}						
+
+			\begin{block} {도서관 반납 }
+			\setlength{\leftmargini}{1em}			
+			\begin{itemize}
+				\item 
+				\item 
+				\item 
+				\item 
+				\item 
+				\item 
+				\item 
+				\item 
+			\end{itemize}
+			\end{block}						
+
+		\end{frame}					
+
+
+	% ----------------------------------------------------------------------------- 풍물단
+	%
+	% -----------------------------------------------------------------------------
+		\section{풍물단}
+		\begin{frame} [t,plain]
+%		\frametitle{풍물단}
+			\begin{block} {풍물단}
+			\setlength{\leftmargini}{1em}			
+			\begin{itemize}
+				\item 	\hrulefill
+				\item 	\hrulefill
+				\item 	\hrulefill
+			\end{itemize}
+			\end{block}						
+		\end{frame}					
+
+
+	% ----------------------------------------------------------------------------- 보현
+	%
+	% -----------------------------------------------------------------------------
+		\section{보현}
+		\begin{frame} [t,plain]
+		\frametitle{}
+
+			\begin{block} {보현}
+			\setlength{\leftmargini}{1em}			
+			\begin{itemize}
+				\item 	\hrulefill
+				\item 	\hrulefill
+				\item 	\hrulefill
+				\item 	\hrulefill
+				\item 	\hrulefill
+			\end{itemize}
+			\end{block}						
+
+			
+
+			\begin{block} {보현 명상 산우회 }
+			\setlength{\leftmargini}{1em}			
+			\begin{itemize}
+				\item 	\hrulefill
+				\item 	\hrulefill
+				\item 	\hrulefill
+				\item 	\hrulefill
+				\item 	\hrulefill
+			\end{itemize}
+			\end{block}						
+
+		\end{frame}					
+
+	% ----------------------------------------------------------------------------- 금성고등학교
+	%
+	% -----------------------------------------------------------------------------
+		\section{금성고등학교}
+		\begin{frame} [t,plain]
+		\frametitle{}
+			\begin{block} {금성고등학교}
+			\setlength{\leftmargini}{1em}			
+			\begin{itemize}
+				\item 	\hrulefill
+				\item 	\hrulefill
+				\item 	\hrulefill
+			\end{itemize}
+			\end{block}						
+		\end{frame}					
+
+	% ----------------------------------------------------------------------------- 물품 구입
+	%
+	% -----------------------------------------------------------------------------
+		\section{물품 구입}
+		\begin{frame} [t,plain]
+		\frametitle{}
+			\begin{block} {물품 구입}
+			\setlength{\leftmargini}{1em}			
+			\begin{itemize}
+				\item 	\hrulefill
+				\item 	\hrulefill
+				\item 	\hrulefill
+				\item 	\hrulefill
+				\item 	\hrulefill
+				\item 	\hrulefill
+				\item 	\hrulefill
+				\item 	\hrulefill
+				\item 	\hrulefill
+				\item 	\hrulefill
+
+			\end{itemize}
+			\end{block}						
+		\end{frame}					
+
+
+
+
+
+
+
+
+% ------------------------------------------------------------------------------
+% End document
+% ------------------------------------------------------------------------------
+
+
+
+
+
+\end{document}
+
+
